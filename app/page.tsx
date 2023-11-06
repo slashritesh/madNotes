@@ -21,7 +21,7 @@ export default function Home() {
             also solve your programming solution at one place.
           </p>
           <Button className="mt-10 text-white hover:bg-blue-800 bg-blue-600">
-            <Link href={'/notes'}>Start Making Notes</Link>
+            <Link href={'/admin/notes'}>Start Making Notes</Link>
           </Button>
         </div>
 

@@ -28,9 +28,7 @@ const Navbar = () => {
         </SheetTrigger>
         <SheetContent>
           <div className="h-[85vh] py-10 flex flex-col items-center">
-            <h3 className="p-2 hover:bg-background">Home</h3>
-            <h3 className="p-2 hover:bg-background">Notes</h3>
-            <h3 className="p-2 hover:bg-background">Pricing</h3>
+            <Link className="p-2" href={'/admin/notes'}>Notes</Link>
           </div>
           <div className="flex justify-end">
           <ModeToggle />
@@ -52,7 +50,7 @@ const Navbar = () => {
           <Link href={'/login'}>Log In</Link>
         </Button>
         <Button size={"sm"}>
-          <Link href={"/notes"}>Get Started</Link>
+          <Link href={"/admin/notes"}>Get Started</Link>
         </Button>
       </div>
     </div>

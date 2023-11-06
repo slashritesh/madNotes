@@ -22,11 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html
-       lang="en" suppressHydrationWarning>
+       lang="en" suppressHydrationWarning className="dark" style={{colorScheme : 'dark'}}>
       <body className={poppins.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
         >
           <Container>
             {children}

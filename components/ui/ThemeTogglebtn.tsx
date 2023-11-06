@@ -4,9 +4,19 @@ import * as React from "react"
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
+import { useEffect } from "react"
 
 function ModeToggle() {
   const { setTheme } = useTheme()
+  const [mounted,setMounted] = React.useState(Boolean)
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+
 
   return (
     <>
