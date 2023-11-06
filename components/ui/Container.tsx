@@ -6,7 +6,7 @@ interface ChildrenProps {
 
 const Container = ({children} : ChildrenProps) => {
   return (
-    <div className='px-20'>{children}</div>
+    <div className='px-5 sm:px-7 md:px-10 lg:px-20 '>{children}</div>
   )
 }
 
