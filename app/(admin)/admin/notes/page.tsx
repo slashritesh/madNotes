@@ -1,15 +1,21 @@
-'use client'
-import React from 'react'
-import Math from '@/app/content/Maths.mdx'
+import NoteCard from "@/components/NoteCard";
+import NotesHeader from "@/components/NotesHeader";
+import Link from "next/link";
+import React from "react";
 
-const Notes = () => {
+const page = () => {
   return (
-    <div className='p-8 bg-slate-100 dark:bg-primary-foreground dark:bg-background rounded-md w-full'>
-        <div className='prose w-full dark:prose-headings:text-white dark:text-white'>
-           <Math />
-        </div>
+    <div className="py-5">
+      <NotesHeader />
+      <div className="grid py-5 gap-5 md:grid-cols-4">
+        <NoteCard isFolder={true} collection={13} filename="maths.pdf" title="Mathamatics Notes" />
+        <NoteCard isFolder={false} filename="maths.pdf" title="Chemistry Notes" />
+        <NoteCard isFolder={true} collection={23} filename="maths.pdf" title="Biology Notes" />
+        <NoteCard isFolder={false} filename="maths.pdf" title="Computer Science Notes" />
+        <NoteCard isFolder={true} collection={23} filename="maths.pdf" title="Mathamatics Notes" />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Notes
+export default page;

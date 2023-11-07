@@ -1,21 +1,13 @@
-
-
+import AdminNavbar from '@/components/AdminNavbar'
 import React from 'react'
 
-const DashboardLayout = () => {
+const layout = ({children}:{children:React.ReactNode}) => {
   return (
-    <>
-    <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        
-    </body>
-    </html>
-    </>
+    <div>
+        <AdminNavbar />
+        {children}
+    </div>
   )
 }
 
-export default DashboardLayout
+export default layout
