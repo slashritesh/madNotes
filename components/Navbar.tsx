@@ -6,7 +6,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import ModeToggle from "./ui/ThemeTogglebtn";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { FiFeather, FiMenu } from "react-icons/fi";
@@ -31,7 +30,6 @@ const Navbar = () => {
             <Link className="p-2" href={'/admin/notes'}>Notes</Link>
           </div>
           <div className="flex justify-end">
-          <ModeToggle />
           <Button size={'sm'} variant={'ghost'}>
             <Link href={'/signin'}>Sign in
             </Link>
@@ -45,7 +43,6 @@ const Navbar = () => {
       </Sheet>
 
       <div className="hidden sm:flex items-center gap-5 ">
-        <ModeToggle />
         <Button className="" variant={"outline"} size={"sm"}>
           <Link href={'/login'}>Log In</Link>
         </Button>

@@ -29,7 +29,9 @@ const Signin = () => {
               </label>
               <Input type="password" />
             </div>
-            <Button>Submit now</Button>
+            <Button>
+              <Link href={'/admin'}>Submit now</Link>
+            </Button>
             <p className="mt-5 text-sm text-center">
               existing user ?{" "}
               <Link className="underline text-blue-600" href={"/login"}>
